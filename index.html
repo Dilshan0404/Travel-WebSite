@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel with SuperSonic</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+ <!-- header section starts --> 
+
+
+ <header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ravel <br>with <span>S</span>uperSonic</a>
+
+    <nav class="navbar">
+        
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+ </header>
+ 
+<!-- header section ends --> 
+
+<!-- login form container -->
+
+<div class="login-form-container">
+
+    <i class="fa fa-times" id="form-close"></i>
+
+       <form action="">
+        <h3>log in</h3>
+        <input type="email" class="box" placeholder="Enter your email">
+        <input type="password" class="box" placeholder="Enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forgot password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+ 
+
+</div>
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>discover beautiful places with us,adventure awaits</p>
+        <a href="#" class="btn">discover more &#8594</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="Videos/vid-5.mp4"></span>
+        <span class="vid-btn" data-src="Videos/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="Videos/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="Videos/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="Videos/vid-3.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="Videos/vid-5.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="Images/booking.png" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name">
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+         </form>
+
+    </div>
+
+
+</section>
+
+
+<!-- book section ends -->
+
+<!-- packages section starts-->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>P</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Images/Sigiriya.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Sigiriya</h3>
+                <p>Sigiriya is one of the most valuable historical monuments of Sri Lanka. Referred by locals as the Eighth Wonder of the World, this ancient palace and fortress complex has significant archaeological importance and attracts thousands of tourists every year. It is probably the most visited tourist destination in Sri Lanka</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span> $120.00 </span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Images/Kandy.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Kandy</h3>
+                <p>This sacred Buddhist site, popularly known as the city of Senkadagalapura, was the last capital of the Sinhala kings whose patronage enabled the Dinahala culture to flourish for more than 2,500 years until the occupation of Sri Lanka by the British in 1815. It is also the site of the Temple of the Tooth Relic (the sacred tooth of the Buddha), which is a famous pilgrimage site.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span> $120.00 </span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Images/Ella.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Ella</h3>
+                <p>Ella has all the best parts of Sri Lanka rolled into one: beautiful jungle mountains, rolling tea plantations, and epic waterfalls. As one of the biggest tea producers, travelers can look forward to spending their days among the greenest surroundings, enjoying the views from hilltop houses and adventurous hiking trails</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span> $120.00 </span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Images/Galle.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Galle</h3>
+                <p>Galle is one of the country’s most exciting and vibrant cities, given its historical significance, and it is most definitely a city you will want to check out when you visit Sri Lanka</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span> $120.00 </span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Images/Nuwalaeliya.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Nuwaraeliya</h3>
+                <p>Nuwara Eliya is often referred to by the Sri Lankan tourist industry as "Little England". Travelling through Winding roads and Lush green valleys, and Tea Estates situated on the slopes and banks of the hills, with tiny streams and Water falls and the beautiful misty mountains , one can arrive at Nuwara Eliya town which offers you everything, as any other town does and more</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span> $120.00 </span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Images/Arugam bay.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Arugam Bay</h3>
+                <p>Lovely Arugam Bay, a moon-shaped curl of soft sand, is home to a famed point break that many regard as the best surf spot in the country. It's a tiny place, with a population of a few hundred, and everything is dotted along a single road which parallels the coast.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span> $120.00 </span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Images/Polonnaruwa.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Polonnaruwa</h3>
+                <p>Polonnaruwa was Sri Lanka's spectacular second ancient city, and the ruins from this golden age vividly reflect some of the most well-preserved architectural treasures of the time. Dating back to the tenth century, the ruins incorporate palaces, monasteries, Buddhist and Hindu temples, dagobas and many beautiful statues, and sit beneath shady trees near the Parakrama Samudra Tank</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span> $120.00 </span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Images/Dambulla.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Dambulla</h3>
+                <p>Dambulla's famed rock cave temple is an iconic Sri Lankan image - you'll be familiar with its spectacular Buddha-filled interior long before you arrive in town. Despite its slightly commercial air, this remains an important holy place and should not be missed. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span> $120.00 </span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Images/Mirissa.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Mirissa</h3>
+                <p>Mirissa is one of the most popular places in Sri Lanka to visit for a beach getaway. But there is so much more to Mirissa than just stunning beaches, in fact, there are a ton of fun things to do in Mirissa, Sri Lanka!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span> $120.00 </span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- packages section ends-->
+
+
+<!-- services section starts -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i> 
+            <h3>affordable hotels</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus mollitia consectetur ratione architecto nisi!</p>        
+        </div>
+
+        <div class="box">
+            <i class="fas fa-utensils"></i> 
+            <h3>food and drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus mollitia consectetur ratione architecto nisi!</p>        
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i> 
+            <h3>safety guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus mollitia consectetur ratione architecto nisi!</p>        
+        </div>
+
+        <div class="box">
+            <i class="fas fa-globe-asia"></i> 
+            <h3>all around Sri Lanka</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus mollitia consectetur ratione architecto nisi!</p>        
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car"></i> 
+            <h3>fastest travel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus mollitia consectetur ratione architecto nisi!</p>        
+        </div>
+
+        <div class="box">
+            <i class="fas fa-hiking"></i> 
+            <h3>adventures</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus mollitia consectetur ratione architecto nisi!</p>        
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- services section ends -->
+
+<!-- gallery section starts-->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>G</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>E</span>
+        <span>R</span>
+        <span>Y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Images/1.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Explore Beautiful & New Places with Us</p>
+                <a href="#packages" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Images/2.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Explore Beautiful & New Places with Us</p>
+                <a href="#packages" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Images/3.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Explore Beautiful & New Places with Us</p>
+                <a href="#packages" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Images/4.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Explore Beautiful & New Places with Us</p>
+                <a href="#packages" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Images/5.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Explore Beautiful & New Places with Us</p>
+                <a href="#packages" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Images/6.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Explore Beautiful & New Places with Us</p>
+                <a href="#packages" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Images/7.png" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Explore Beautiful & New Places with Us</p>
+                <a href="#packages" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Images/8.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Explore Beautiful & New Places with Us</p>
+                <a href="#packages" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Images/9.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Explore Beautiful & New Places with Us</p>
+                <a href="#packages" class="btn">see more</a>
+            </div>
+        </div>
+        
+
+    </div>
+
+</section>
+
+
+<!-- gallery section ends-->
+
+
+<!-- review section starts-->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading">
+        <span>R</span>
+        <span>E</span>
+        <span>V</span>
+        <span>I</span>
+        <span>E</span>
+        <span>W</span>
+        <span>S</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Images/pic1.jpg" alt="">
+                    <h3>john deo</h3>
+                    <p>A great service and what we were is exactly what we received.
+                    We will be holiday inn again shortly and my first stop will be the Travel with website
+                    Thank You</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Images/pic2.jpg" alt="">
+                    <h3>Maria Georgianne</h3>
+                    <p>Fantastic, all organised in the one go. Was very greatful transport to and from accommodation and tours was organised, and all very friendly staff.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Images/pic3.jpg" alt="">
+                    <h3>Jacob Antonio</h3>
+                    <p>Gave us all the information we needed and everything was organised when we arrived. Excellent trip. Will be booking through Trave with SuperSonic again!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Images/pic4.jpg" alt="">
+                    <h3>Mikaila Chan</h3>
+                    <p>From start to finish , was super smooth thankyou for making it so easy</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Images/pic5.jpg" alt="">
+                    <h3>Hendrix Richard</h3>
+                    <p>I was very happy with the service Travel on Line provide and will consider using again.
+                        thanks</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends-->
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="Images/Contact.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+               <input type="text" placeholder="name">
+               <input type="email" placeholder="email"> 
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject"> 
+             </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section -->
+
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="Images/b1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="Images/b2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="Images/b3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="Images/b4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="Images/b5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="Images/b6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="Images/b7.jpg" alt=""></div>
+        </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer section -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>“Travel is the main thing you purchase that makes you more extravagant”. We, at "Travel with Supersonic", swear by this and put stock in satisfying travel dreams that make you perpetually rich constantly.</p><br>
+            <a href="tel:+94762150090"><i class="fas fa-phone"></i> call us +94771234123</a>
+            <a href="https://goo.gl/maps/obkKc3NnVq4zoXGz5"><i class="fas fa-map-marker-alt"></i> colombo,Sri Lanka</a>
+            <a href="mailto:dilshan.20223148@iit.ac.lk"><i class="fas fa-envelope"></i> Mail us</a>
+            
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">Colombo</a>
+            <a href="#">Galle</a>
+            <a href="#">Kandy</a>
+            <a href="#">Negombo</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span>Dilshan Edirisinghe</span> | &#169 copyright 2023-Team SuperSonic</h1>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- custom js file link -->
+<script src="script.js"></script>   
+</body>
+</html>
+
+
+<div class="box">
+    
+    
+    
